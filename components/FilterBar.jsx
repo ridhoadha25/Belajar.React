@@ -9,7 +9,9 @@ function FilterBar({
         onClick={() =>
           setFilter("all")
         }
+        className={filter === "all" ? "active" : ""}
       >
+        <i className="fas fa-list"></i>
         Semua
       </button>
 
@@ -17,7 +19,9 @@ function FilterBar({
         onClick={() =>
           setFilter("active")
         }
+        className={filter === "active" ? "active" : ""}
       >
+        <i className="fas fa-circle-notch"></i>
         Aktif
       </button>
 
@@ -25,7 +29,9 @@ function FilterBar({
         onClick={() =>
           setFilter("completed")
         }
+        className={filter === "completed" ? "active" : ""}
       >
+        <i className="fas fa-check-circle"></i>
         Selesai
       </button>
 
