@@ -22,7 +22,7 @@ function TodoForm({ addTodo }) {
     >
       <input
         type="text"
-        placeholder="Tambah tugas..."
+        placeholder="Tambah tugas baru..."
         value={text}
         onChange={(e) =>
           setText(e.target.value)
@@ -30,6 +30,7 @@ function TodoForm({ addTodo }) {
       />
 
       <button>
+        <i className="fas fa-plus"></i>
         Tambah
       </button>
     </form>
