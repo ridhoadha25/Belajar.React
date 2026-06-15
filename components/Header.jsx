@@ -1,9 +1,12 @@
 function Header() {
   return (
     <>
-      <h1>🚀 React Todo App</h1>
+      <h1>
+        <i className="fas fa-list-check"></i>
+        Todo Master
+      </h1>
       <p>
-        Kelola aktivitas harianmu
+        Kelola aktivitas harianmu dengan mudah
       </p>
     </>
   );
