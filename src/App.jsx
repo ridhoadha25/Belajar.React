@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import Header from "./components/Header";
-import TodoForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
-import FilterBar from "./components/FilterBar";
-import Stats from "./components/Stats";
+import Header from "../components/Header.jsx";
+import TodoForm from "../components/TodoForm.jsx";
+import TodoList from "../components/TodoList.jsx";
+import FilterBar from "../components/FilterBar.jsx";
+import Stats from "../components/Stats.jsx";
+import Footer from "../components/Footer.jsx";
 import "./App.css";
 
 function App() {
@@ -98,6 +99,8 @@ function App() {
         />
 
       </div>
+
+      <Footer />
 
     </div>
   );
