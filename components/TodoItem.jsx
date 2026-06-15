@@ -35,6 +35,13 @@ function TodoItem({
           onChange={(e) =>
             setNewText(e.target.value)
           }
+          style={{
+            flex: 1,
+            padding: "8px 12px",
+            border: "2px solid #3b82f6",
+            borderRadius: "8px",
+            marginRight: "10px"
+          }}
         />
       ) : (
         <span
@@ -54,6 +61,7 @@ function TodoItem({
           <button
             onClick={saveEdit}
           >
+            <i className="fas fa-check"></i>
             Simpan
           </button>
         ) : (
@@ -62,6 +70,7 @@ function TodoItem({
               setEditing(true)
             }
           >
+            <i className="fas fa-pen"></i>
             Edit
           </button>
         )}
@@ -71,6 +80,7 @@ function TodoItem({
             deleteTodo(todo.id)
           }
         >
+          <i className="fas fa-trash"></i>
           Hapus
         </button>
 
