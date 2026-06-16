@@ -37,10 +37,13 @@ function TodoItem({
           }
           style={{
             flex: 1,
+            minWidth: "0",
             padding: "8px 12px",
             border: "2px solid #3b82f6",
             borderRadius: "8px",
-            marginRight: "10px"
+            marginRight: "10px",
+            fontSize: "1em",
+            fontFamily: "inherit"
           }}
         />
       ) : (
